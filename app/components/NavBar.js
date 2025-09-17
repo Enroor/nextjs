@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import DarkMode from "./DarkMode";
 
 const NavBar = () => {
   const router = usePathname();
@@ -37,7 +38,7 @@ const NavBar = () => {
             {menuOpen ? (
               <XMarkIcon className="h-6 w-6" />
             ) : (
-              <Bars3Icon className="h-6 w-6" />
+              <Bars3Icon className="h-6 w-6 mr-4" />
             )}
           </button>
 
@@ -56,6 +57,9 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
+          <div className="hidden md:flex">
+            <DarkMode/>
+          </div>
         </div>
 
         {/* Menú desplegable solo en móvil */}
@@ -75,6 +79,9 @@ const NavBar = () => {
                 </Link>
               </li>
             ))}
+            <li className="flex justify-end">
+              <DarkMode/>
+            </li>
           </ul>
         )}
       </nav>

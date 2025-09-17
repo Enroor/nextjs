@@ -16,7 +16,7 @@ export default function Hero() {
         ¡Hola! Soy <span className="text-blue-600">Quique</span>
       </h1>
       <p className="text-lg md:text-xl text-gray-700 mt-4 max-w-xl">
-        Desarrollador Frontend especializado en crear experiencias web modernas, rápidas y accesibles.
+        Desarrollador Frontend especializado en crear webs modernas, rápidas y accesibles.
       </p>
       <p className="mt-2 text-base italic text-gray-500 dark:text-gray-400 max-w-xl">
         &quot;Curioso, autodidacta y con ganas de seguir creciendo profresionalmente.&quot;

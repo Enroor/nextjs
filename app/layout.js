@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./styles/globals.css";
+import "./styles/dark.css";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 
