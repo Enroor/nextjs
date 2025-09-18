@@ -164,14 +164,14 @@ export default function Hooks() {
                             placeholder="Usuario"
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
-                            className="w-full px-3 py-2 rounded border bg-gray-300"
+                            className="w-full px-3 py-2 rounded border bg-white"
                         />
                         <input
                             type="password"
                             placeholder="Contraseña"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="w-full px-3 py-2 rounded border bg-gray-300"
+                            className="w-full px-3 py-2 rounded border bg-white"
                         />
                         {errorMsg && <p className="text-red-500">{errorMsg}</p>}
                         <button
@@ -193,7 +193,7 @@ export default function Hooks() {
                     placeholder="Introduce tu email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-3 py-2 rounded border bg-gray-300 mb-2"
+                    className="w-full px-3 py-2 rounded border bg-white mb-2"
                 />
                 {emailValid === null ? (
                     <p className="text-gray-400 italic">Introduce un email para validar</p>

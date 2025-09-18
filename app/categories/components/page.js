@@ -5,7 +5,7 @@ function LikeButton({ label }) {
     const [likes, setLikes] = useState(0);
 
     return (
-        <div className="my-4 p-2 bg-gray-900 hover:bg-gray-900/80 text-white cursor-pointer rounded" onClick={() => setLikes(likes + 1)}>
+        <div className="my-4 p-2 bg-gray-900 hover:bg-gray-900/80 text-white cursor-pointer rounded w-1/4" onClick={() => setLikes(likes + 1)}>
             {label} 👍 {likes}
         </div>
     );
@@ -38,9 +38,11 @@ const Page = () => {
     return (
         <div>
             <h1 className='text-xl font-bold mb-2'>Componentes</h1>
-            <LikeButton label="Frontend" />
-            <LikeButton label="Backend" />
-            <LikeButton label="UI/UX" />
+            <div className="flex gap-4 flex-wrap justify-center">
+                <LikeButton label="Frontend" />
+                <LikeButton label="Backend" />
+                <LikeButton label="UI/UX" />
+            </div>
             <div className="mt-5 bg-gray-200 px-4 py-6 rounded">
                 <h2 className="text-2xl text-gray-800 font-semibold mb-10 text-center underline">Lista de Tareas</h2>
 
